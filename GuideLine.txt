@@ -1,0 +1,22 @@
+As you can see the product is none if you don't run the SQL in your computer
+If you have done the step down below this and you still can't run the code
+please chech your PORT with server and MAMP
+
+
+
+1.	
+	run the SQL in SQL prodile
+
+2.	
+	download node.js and I'll suggestyou run this in VS code
+
+3.	
+	npm i
+	
+4.
+	download MAMP
+
+5.
+	run the project
+	nodemon index.js
+	

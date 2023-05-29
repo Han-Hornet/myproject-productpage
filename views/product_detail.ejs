@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="HD">
+    <%- include('share/head'); %>
+</head>
+<body>
+    <div class="header">
+        <%- include('share/navbar'); %>
+    </div>
+    <div id="custom-alert" class="hidden">
+        <div class="icon-container">
+          <img src="/image/navbar/icons8-ok.gif" alt="Anime Icon">
+        </div>
+        <div class="message-container">
+          <p id="custom-alert-message"></p>
+        </div>
+      </div>
+    <dialog id="custom-alert2" class="hidden">
+        <div class="icon-container">
+          <img src="/image/navbar/icons8-x.gif" alt="Anime Icon">
+        </div>
+        <div class="message-container">
+          <p id="custom-alert-message2"></p>
+        </div>
+      </dialog>
+      <dialog id="custom-confirm" class="hidden">
+        <div class="icon-container">
+          <img src="/image/navbar/icons8-warning-96.png" alt="Anime Icon">
+        </div>
+        <div class="message-container">
+          <p id="custom-confirm-message"></p>
+          <div class="button-container">
+            <button id="custom-confirm-okay" class="btn btn-outline-primary fw-bold">確認</button>
+            <button id="custom-confirm-cancel" class="btn btn-outline-primary fw-bold">取消</button>
+          </div>
+        </div>
+      </dialog>
+    <header>
+        <div id="product_detail_up_return">
+            <a class="btn">&lt;&lt;主商品頁</a>
+        </div>
+        <section class="py-5 container">
+            <div class="row py-lg-2 border border-2 rounded">
+              <div class="py-3">
+                <div id="product_detail_up">
+
+                </div>
+                <%- include('share/dialog'); %>
+            </div>
+            </div>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <section class="py-3 container">
+            <div id="down_list_div" class="row py-lg-2 border border-2 rounded">
+                <div class="py-3">
+                    <ul class="down_list nav nav-tabs" id="down_list" role="tablist">
+                        <li class="nav-item d-dp">
+                            <a class="nav-link active border-secondary" id="down_list_detail" data-toggle="tab" href="#" role="tab" aria-controls="detail"
+                                aria-selected="true">物品詳細資訊</a>
+                        </li>
+                        <li class="nav-item d-dp">
+                            <a class="nav-link border-secondary" id="down_list_qa" data-toggle="tab" href="#tabs1-2" role="tab" aria-controls="qa"
+                                aria-selected="false">問與答</a>
+                        </li>
+                        <li class="nav-item d-dp">
+                            <a class="nav-link border-secondary" id="down_list_wc" data-toggle="tab" href="#" role="tab" aria-controls="wc"
+                                aria-selected="false">想交換此物品的對象</a>
+                        </li>
+                    </ul>
+                    <div class="panel-container" style="">	
+
+                        <div id="tabs1-1" class="active d-show" style="">
+
+                            
+                        </div>    
+                        <div id="tabs1-2" class="d-none d-show">
+                            <div class="showQA">
+
+                            </div>
+                        <div class="Blogin d-none">
+                            &nbsp;問與答 :
+                            <form action="">
+                                <div>
+                                    <textarea name="QA" id="QA"></textarea>
+                                    <input type="button" id="QA_send" value="送出問題" class="QA_send"></input>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="Nlogin d-none">
+                            &nbsp;您必須先登入會員才能發問！
+                        </div>					
+                        </div>   
+                        <div id="tabs1-3" class="d-none d-show">
+
+                        </div>
+                        <div id="tabs1-4" class="d-show">
+                        
+                            
+    
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <div class="footer text-center">
+    </div>
+</body>
+</html>
